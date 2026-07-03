@@ -1,7 +1,7 @@
 {
   "name": "trophy-case",
   "displayName": "Trophy Case",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Steam-style achievements for Claude Code: live 'Achievement unlocked' toasts, a trophy shelf in your terminal, hidden trophies, and a monthly Wrapped with your coding archetype. Zero dependencies, all local.",
   "author": {
     "name": "Dumitru Crismari"
@@ -10,6 +10,5 @@
   "homepage": "https://github.com/Dumys/trophy-case",
   "repository": "https://github.com/Dumys/trophy-case",
   "keywords": ["achievements", "gamification", "wrapped", "stats", "fun", "hooks"],
-  "skills": "./skills/",
-  "hooks": "./hooks/hooks.json"
+  "skills": "./skills/"
 }
