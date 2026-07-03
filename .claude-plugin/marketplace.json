@@ -1,0 +1,14 @@
+{
+  "name": "trophy-case",
+  "description": "Trophy Case — Steam-style achievements and a monthly Wrapped for Claude Code.",
+  "owner": {
+    "name": "Dumitru Crismari"
+  },
+  "plugins": [
+    {
+      "name": "trophy-case",
+      "source": "./",
+      "description": "Achievements for Claude Code: live unlock toasts, trophy shelf, hidden trophies, monthly Wrapped with your coding archetype."
+    }
+  ]
+}

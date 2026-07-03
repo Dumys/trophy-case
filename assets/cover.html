@@ -1,0 +1,68 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0e0c0a; overflow: hidden; }
+  #cover { position: relative; width: 1280px; height: 640px; overflow: hidden;
+    background:
+      radial-gradient(900px 520px at 84% 116%, rgba(215,175,95,.17), transparent 60%),
+      radial-gradient(700px 400px at -8% -20%, rgba(217,119,87,.10), transparent 55%),
+      linear-gradient(160deg, #191510 0%, #110e0b 55%, #0e0c0a 100%);
+    font-family: 'Fraunces', Georgia, serif; }
+  #cover::before { content: ''; position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(800px 500px at 30% 20%, #000 30%, transparent 75%); }
+  .wordmark { position: absolute; top: 88px; left: 96px; }
+  .spark { color: #d7af5f; font-size: 54px; vertical-align: 12px; margin-right: 18px;
+    font-family: 'JetBrains Mono', monospace; }
+  h1 { display: inline; color: #f3ede6; font-size: 92px; font-weight: 600;
+    letter-spacing: -0.015em; font-variation-settings: 'opsz' 80; }
+  h1 .case { font-family: 'JetBrains Mono', Menlo, monospace; font-weight: 700;
+    color: #d7af5f; font-size: 78px; letter-spacing: 0.01em; margin-left: 10px; }
+  .tag { position: absolute; top: 214px; left: 100px; width: 900px;
+    color: #a89c8e; font-size: 24px; line-height: 1.4; font-weight: 500; }
+  .tag b { color: #e8ddd2; font-weight: 600; }
+  .for { position: absolute; top: 252px; right: 92px; text-align: right;
+    font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: .14em;
+    color: #d7af5f; text-transform: uppercase; }
+  .for::before { content: ''; display: inline-block; width: 34px; height: 1px;
+    background: #d7af5f; vertical-align: 4px; margin-right: 12px; opacity: .7; }
+  .toast { position: absolute; right: 88px; top: 96px; width: 400px;
+    background: #1c1812; border: 1px solid #3a3222; border-radius: 12px; padding: 16px 18px;
+    font-family: 'JetBrains Mono', Menlo, monospace; font-size: 14px; line-height: 1.6;
+    color: #d7af5f; box-shadow: 0 20px 50px rgba(0,0,0,.5); }
+  .toast small { color: #857a68; display: block; margin-top: 6px; font-size: 12px; }
+  .term { position: absolute; left: 96px; right: 96px; bottom: 64px;
+    background: #16130e; border: 1px solid #2e2a20; border-radius: 16px;
+    box-shadow: 0 40px 90px rgba(0,0,0,.6), 0 0 0 1px rgba(215,175,95,.06); }
+  .term header { display: flex; align-items: center; gap: 8px; padding: 13px 18px;
+    border-bottom: 1px solid #26221a; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: #2e2a20; }
+  .dot:first-child { background: #d7af5f; opacity: .85; }
+  .term header em { color: #6f6657; font-style: normal;
+    font-family: 'JetBrains Mono', monospace; font-size: 13px; margin-left: 10px; }
+  .term pre { padding: 18px 26px 20px; font: 500 15.5px/1.65 'JetBrains Mono', Menlo, monospace; }
+</style></head>
+<body>
+<div id="cover">
+  <div class="wordmark"><span class="spark">✦</span><h1>Trophy <span class="case">CASE</span></h1></div>
+  <p class="tag">Steam-style achievements for <b>Claude Code</b> — and a monthly Wrapped.</p>
+  
+  <div class="toast">🥈 Achievement unlocked — Night Shift<small>Committing crimes against sleep.</small></div>
+  <section class="term">
+    <header><span class="dot"></span><span class="dot"></span><span class="dot"></span><em>/trophy-case</em></header>
+    <pre><span style=""> </span><span style="color:#d7875f;"></span><span style="color:#d7875f;font-weight:600;">✦</span><span style=""> </span><span style="color:#eeeeee;"></span><span style="color:#eeeeee;font-weight:600;">Trophy Case</span><span style=""></span><span style="color:#8a8a8a;">  15 / 32 unlocked</span><span style="">
+ </span><span style="color:#d7af5f;"></span><span style="color:#d7af5f;font-weight:600;">GOLD     </span><span style="">
+   </span><span style="color:#d7af5f;">●</span><span style=""> </span><span style="color:#eeeeee;"></span><span style="color:#eeeeee;font-weight:600;">Millennium                </span><span style=""></span><span style="color:#8a8a8a;">A thousand hands, one keyboard.</span><span style=""></span><span style="color:#4e4e4e;">  Jun 21</span><span style="">
+   </span><span style="color:#4e4e4e;">◌ ???                       keep playing — it will find you</span><span style="">
+   </span><span style="color:#d7af5f;">●</span><span style=""> </span><span style="color:#eeeeee;"></span><span style="color:#eeeeee;font-weight:600;">Friday Deploy             </span><span style=""></span><span style="color:#8a8a8a;">What could possibly go wrong?</span><span style=""></span><span style="color:#4e4e4e;">  Jun 27</span><span style="">
+   </span><span style="color:#4e4e4e;">◌ ???                       keep playing — it will find you</span><span style="">
+ </span><span style="color:#c6c6c6;"></span><span style="color:#c6c6c6;font-weight:600;">SILVER   </span><span style="">
+   </span><span style="color:#c6c6c6;">●</span><span style=""> </span><span style="color:#eeeeee;"></span><span style="color:#eeeeee;font-weight:600;">Night Shift               </span><span style=""></span><span style="color:#8a8a8a;">Committing crimes against sleep.</span><span style=""></span><span style="color:#4e4e4e;">  Jun 21</span><span style="">
+   </span><span style="color:#c6c6c6;">●</span><span style=""> </span><span style="color:#eeeeee;"></span><span style="color:#eeeeee;font-weight:600;">One Week Wonder           </span><span style=""></span><span style="color:#8a8a8a;">Seven days. It is starting to recognize y…</span><span style=""></span><span style="color:#4e4e4e;">  Jun 30</span><span style=""></span></pre>
+  </section>
+</div>
+</body></html>

@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/ach/trophy.js\" --hook PostToolUse", "timeout": 15 }] }
+    ],
+    "PostToolUseFailure": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/ach/trophy.js\" --hook PostToolUseFailure", "timeout": 15 }] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/ach/trophy.js\" --hook UserPromptSubmit", "timeout": 15 }] }
+    ],
+    "SessionStart": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/ach/trophy.js\" --hook SessionStart", "timeout": 15 }] }
+    ],
+    "SubagentStart": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/ach/trophy.js\" --hook SubagentStart", "timeout": 15 }] }
+    ],
+    "PermissionDenied": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/ach/trophy.js\" --hook PermissionDenied", "timeout": 15 }] }
+    ],
+    "PreCompact": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/ach/trophy.js\" --hook PreCompact", "timeout": 15 }] }
+    ]
+  }
+}
